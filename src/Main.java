@@ -34,7 +34,7 @@ public class Main {
                     System.out.println("result of multiplication: " + result);
                     break;
                 case DIVISION:
-                    result = result.add(bd1).divide(bd2);
+                    result = result.add(bd1).divide(bd2, 2);
                     System.out.println("result of division: " + result);
                     break;
                 default:
