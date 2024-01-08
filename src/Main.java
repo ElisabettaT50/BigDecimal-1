@@ -1,4 +1,6 @@
 import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 /*
 Scrivi un programma Java dove imposti 2 BigDecimal e 1 operazione aritmetica
 (Addizione, sottrazione, moltiplicazione e divisione, min e max) definita in un enum,
@@ -34,7 +36,7 @@ public class Main {
                     System.out.println("result of multiplication: " + result);
                     break;
                 case DIVISION:
-                    result = result.add(bd1).divide(bd2, 2);
+                    result = result.add(bd1).divide(bd2, RoundingMode.DOWN);
                     System.out.println("result of division: " + result);
                     break;
                 default:
